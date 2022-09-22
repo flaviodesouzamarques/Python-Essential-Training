@@ -1,3 +1,6 @@
 
+from termcolor import colored, cprint
 
-print('Hello World !!!')
+text = colored("Hello, World", "green", attrs=["reverse", "blink"])
+print(text)
+cprint("Hello, World", "blue", "on_red")
